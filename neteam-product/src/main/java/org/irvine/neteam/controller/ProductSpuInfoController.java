@@ -1,7 +1,7 @@
 package org.irvine.neteam.controller;
 
-import org.irvine.neteam.entity.UserMember;
-import org.irvine.neteam.service.UserMemberService;
+import org.irvine.neteam.entity.ProductSpuInfo;
+import org.irvine.neteam.service.ProductSpuInfoService;
 import org.springframework.web.bind.annotation.*;
 import org.irvine.neteam.common.utils.ResultType;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -9,19 +9,19 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import javax.annotation.Resource;
 
 /**
- * 会员(UserMember)表控制层
+ * spu信息(ProductSpuInfo)表控制层
  *
  * @author g_ban
- * @since 2022-01-16 04:13:11
+ * @since 2022-01-16 15:23:34
  */
 @RestController
-@RequestMapping("/user/userMember")
-public class UserMemberController {
+@RequestMapping("/product/productSpuInfo")
+public class ProductSpuInfoController {
     /**
      * 服务对象
      */
     @Resource
-    private UserMemberService userMemberService;
+    private ProductSpuInfoService productSpuInfoService;
 
     /**
      * 通过主键查询单条数据
@@ -31,40 +31,40 @@ public class UserMemberController {
      */
     @GetMapping("{id}")
     public ResultType queryById(@PathVariable("id") Long id) {
-        return ResultType.ok(this.userMemberService.getById(id));
+        return ResultType.ok(this.productSpuInfoService.getById(id));
     }
 
     /**
      * 查询多条数据
      *
-     * @param userMember 实体
+     * @param productSpuInfo 实体
      * @return 单条数据
      */
     @GetMapping("/query")
-    public ResultType queryById(UserMember userMember) {
-        return ResultType.ok(this.userMemberService.list(new QueryWrapper<>(userMember)));
+    public ResultType queryById(ProductSpuInfo productSpuInfo) {
+        return ResultType.ok(this.productSpuInfoService.list(new QueryWrapper<>(productSpuInfo)));
     }
     
     /**
      * 新增数据
      *
-     * @param userMember 实体
+     * @param productSpuInfo 实体
      * @return 新增结果
      */
     @PostMapping
-    public ResultType add(UserMember userMember) {
-        return ResultType.ok(this.userMemberService.save(userMember));
+    public ResultType add(ProductSpuInfo productSpuInfo) {
+        return ResultType.ok(this.productSpuInfoService.save(productSpuInfo));
     }
 
     /**
      * 编辑数据
      *
-     * @param userMember 实体
+     * @param productSpuInfo 实体
      * @return 编辑结果
      */
     @PutMapping
-    public ResultType update(UserMember userMember) {
-        return ResultType.ok(this.userMemberService.updateById(userMember));
+    public ResultType update(ProductSpuInfo productSpuInfo) {
+        return ResultType.ok(this.productSpuInfoService.updateById(productSpuInfo));
     }
 
     /**
@@ -75,7 +75,7 @@ public class UserMemberController {
      */
     @DeleteMapping
     public ResultType deleteById(Long id) {
-        return ResultType.ok(this.userMemberService.removeById(id));
+        return ResultType.ok(this.productSpuInfoService.removeById(id));
     }
 
 }

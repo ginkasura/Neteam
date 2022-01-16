@@ -3,6 +3,934 @@
   <component name="EasyCodeTableSetting">
     <option name="tableInfoMap">
       <map>
+        <entry key="product_category">
+          <value>
+            <TableInfoDTO>
+              <option name="comment" value="商品分类" />
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="分类id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="catId" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="分类名称" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="name" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="分类类别" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="categoryType" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="层级" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="catLevel" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="是否显示[0-不显示，1显示]" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="showStatus" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="排序" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="sort" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="商品数量" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="productCount" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="ProductCategory" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="neteam-product" />
+              <option name="savePackageName" value="org.irvine.neteam" />
+              <option name="savePath" value="$PROJECT_DIR$/neteam-product/src/main/java/org/irvine/neteam" />
+              <option name="templateGroupName" value="MybatisPlus" />
+            </TableInfoDTO>
+          </value>
+        </entry>
+        <entry key="product_category_company_relation">
+          <value>
+            <TableInfoDTO>
+              <option name="comment" value="公司分类关联" />
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="id" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="公司id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="companyId" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="分类id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="categoryId" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="companyName" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="categoryName" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="ProductCategoryCompanyRelation" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="neteam-product" />
+              <option name="savePackageName" value="org.irvine.neteam" />
+              <option name="savePath" value="$PROJECT_DIR$/neteam-product/src/main/java/org/irvine/neteam" />
+              <option name="templateGroupName" value="" />
+            </TableInfoDTO>
+          </value>
+        </entry>
+        <entry key="product_company">
+          <value>
+            <TableInfoDTO>
+              <option name="comment" value="公司" />
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="公司id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="companyId" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="公司名" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="name" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="公司logo地址" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="logo" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="介绍" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="intro" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="显示状态[0-不显示；1-显示]" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="showStatus" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="检索首字母" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="firstLetter" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="排序" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="sort" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="ProductCompany" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="neteam-product" />
+              <option name="savePackageName" value="org.irvine.neteam" />
+              <option name="savePath" value="$PROJECT_DIR$/neteam-product/src/main/java/org/irvine/neteam" />
+              <option name="templateGroupName" value="" />
+            </TableInfoDTO>
+          </value>
+        </entry>
+        <entry key="product_sku_info">
+          <value>
+            <TableInfoDTO>
+              <option name="comment" value="sku信息" />
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="skuId" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="skuId" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="spuId" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="spuId" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="sku名称" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="skuName" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="sku介绍描述" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="skuDesc" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="所属分类id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="catalogId" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="默认图片" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="skuDefaultImg" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="标题" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="skuTitle" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="副标题" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="skuSubtitle" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="价格" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="price" />
+                    <option name="type" value="java.lang.Double" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="销量" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="saleCount" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="出版日期" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="publishTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="出版公司" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="publishCompany" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="类型，电子/实体" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="productType" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="ProductSkuInfo" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="neteam-product" />
+              <option name="savePackageName" value="org.irvine.neteam" />
+              <option name="savePath" value="$PROJECT_DIR$/neteam-product/src/main/java/org/irvine/neteam" />
+              <option name="templateGroupName" value="" />
+            </TableInfoDTO>
+          </value>
+        </entry>
+        <entry key="product_spu_comment">
+          <value>
+            <TableInfoDTO>
+              <option name="comment" value="商品评价" />
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="id" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="sku_id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="skuId" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="spu_id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="spuId" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="商品名字" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="spuName" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="会员昵称" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="memberNickName" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="星级" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="star" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="创建时间" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="createTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="显示状态[0-不显示，1-显示]" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="showStatus" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="点赞数" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="likesCount" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="评论图片/视频[json数据；[{type:文件类型,url:资源路径}]]" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="resources" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="内容" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="content" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="用户头像" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="memberIcon" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="ProductSpuComment" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="neteam-product" />
+              <option name="savePackageName" value="org.irvine.neteam" />
+              <option name="savePath" value="$PROJECT_DIR$/neteam-product/src/main/java/org/irvine/neteam" />
+              <option name="templateGroupName" value="" />
+            </TableInfoDTO>
+          </value>
+        </entry>
+        <entry key="product_spu_images">
+          <value>
+            <TableInfoDTO>
+              <option name="comment" value="spu图片" />
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="id" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="spu_id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="spuId" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="图片名" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="imgName" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="图片地址" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="imgUrl" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="顺序" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="imgSort" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="是否默认图" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="defaultImg" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="ProductSpuImages" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="neteam-product" />
+              <option name="savePackageName" value="org.irvine.neteam" />
+              <option name="savePath" value="$PROJECT_DIR$/neteam-product/src/main/java/org/irvine/neteam" />
+              <option name="templateGroupName" value="" />
+            </TableInfoDTO>
+          </value>
+        </entry>
+        <entry key="product_spu_info">
+          <value>
+            <TableInfoDTO>
+              <option name="comment" value="spu信息" />
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="商品id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="id" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="商品名称" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="spuName" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="商品描述" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="spuDescription" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="所属分类id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="catalogId" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="上架状态[0 - 下架，1 - 上架]" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="publishStatus" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="出版日期" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="publishTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="出版公司" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="publishCompany" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="createTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="updateTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="点赞数" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="likes" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="收藏数" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="collects" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="评分" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="rating" />
+                    <option name="type" value="java.lang.Double" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="ProductSpuInfo" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="neteam-product" />
+              <option name="savePackageName" value="org.irvine.neteam" />
+              <option name="savePath" value="$PROJECT_DIR$/neteam-product/src/main/java/org/irvine/neteam" />
+              <option name="templateGroupName" value="MybatisPlus" />
+            </TableInfoDTO>
+          </value>
+        </entry>
+        <entry key="product_spu_info_intro">
+          <value>
+            <TableInfoDTO>
+              <option name="comment" value="spu信息介绍" />
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="商品id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="spuId" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="商品介绍" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="intro" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="ProductSpuInfoIntro" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="neteam-product" />
+              <option name="savePackageName" value="org.irvine.neteam" />
+              <option name="savePath" value="$PROJECT_DIR$/neteam-product/src/main/java/org/irvine/neteam" />
+              <option name="templateGroupName" value="" />
+            </TableInfoDTO>
+          </value>
+        </entry>
+        <entry key="product_spu_tag">
+          <value>
+            <TableInfoDTO>
+              <option name="comment" value="spu属性值" />
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="id" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="商品id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="spuId" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="属性id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="tagId" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="属性名" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="tagName" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="顺序" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="tagSort" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="快速展示【是否展示在介绍上；0-否 1-是】" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="quickShow" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="ProductSpuTag" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="neteam-product" />
+              <option name="savePackageName" value="org.irvine.neteam" />
+              <option name="savePath" value="$PROJECT_DIR$/neteam-product/src/main/java/org/irvine/neteam" />
+              <option name="templateGroupName" value="" />
+            </TableInfoDTO>
+          </value>
+        </entry>
+        <entry key="product_tag">
+          <value>
+            <TableInfoDTO>
+              <option name="comment" value="商品属性" />
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="属性id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="tagId" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="属性名" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="tagName" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="属性类型" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="tagType" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="启用状态[0 - 禁用，1 - 启用]" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="enable" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="ProductTag" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="neteam-product" />
+              <option name="savePackageName" value="org.irvine.neteam" />
+              <option name="savePath" value="$PROJECT_DIR$/neteam-product/src/main/java/org/irvine/neteam" />
+              <option name="templateGroupName" value="" />
+            </TableInfoDTO>
+          </value>
+        </entry>
+        <entry key="product_tag_group">
+          <value>
+            <TableInfoDTO>
+              <option name="comment" value="属性分组" />
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="分组id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="tagGroupId" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="组名" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="tagGroupName" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="排序" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="sort" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="ProductTagGroup" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="neteam-product" />
+              <option name="savePackageName" value="org.irvine.neteam" />
+              <option name="savePath" value="$PROJECT_DIR$/neteam-product/src/main/java/org/irvine/neteam" />
+              <option name="templateGroupName" value="" />
+            </TableInfoDTO>
+          </value>
+        </entry>
+        <entry key="product_tag_group_relation">
+          <value>
+            <TableInfoDTO>
+              <option name="comment" value="属性&amp;属性分组关联" />
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="id" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="属性id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="tagId" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="属性分组id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="tagGroupId" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="属性组内排序" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="tagSort" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="ProductTagGroupRelation" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="neteam-product" />
+              <option name="savePackageName" value="org.irvine.neteam" />
+              <option name="savePath" value="$PROJECT_DIR$/neteam-product/src/main/java/org/irvine/neteam" />
+              <option name="templateGroupName" value="" />
+            </TableInfoDTO>
+          </value>
+        </entry>
         <entry key="user_member">
           <value>
             <TableInfoDTO>
@@ -13,18 +941,7 @@
                     <option name="comment" value="id" />
                     <option name="custom" value="false" />
                     <option name="ext">
-                      <map>
-                        <entry key="jdbcType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                        <entry key="sqlType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                      </map>
+                      <map />
                     </option>
                     <option name="name" value="id" />
                     <option name="type" value="java.lang.Long" />
@@ -33,18 +950,7 @@
                     <option name="comment" value="会员等级id" />
                     <option name="custom" value="false" />
                     <option name="ext">
-                      <map>
-                        <entry key="jdbcType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                        <entry key="sqlType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                      </map>
+                      <map />
                     </option>
                     <option name="name" value="levelId" />
                     <option name="type" value="java.lang.Long" />
@@ -53,18 +959,7 @@
                     <option name="comment" value="用户名" />
                     <option name="custom" value="false" />
                     <option name="ext">
-                      <map>
-                        <entry key="jdbcType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                        <entry key="sqlType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                      </map>
+                      <map />
                     </option>
                     <option name="name" value="username" />
                     <option name="type" value="java.lang.String" />
@@ -73,18 +968,7 @@
                     <option name="comment" value="密码" />
                     <option name="custom" value="false" />
                     <option name="ext">
-                      <map>
-                        <entry key="jdbcType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                        <entry key="sqlType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                      </map>
+                      <map />
                     </option>
                     <option name="name" value="password" />
                     <option name="type" value="java.lang.String" />
@@ -93,18 +977,7 @@
                     <option name="comment" value="昵称" />
                     <option name="custom" value="false" />
                     <option name="ext">
-                      <map>
-                        <entry key="jdbcType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                        <entry key="sqlType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                      </map>
+                      <map />
                     </option>
                     <option name="name" value="nickname" />
                     <option name="type" value="java.lang.String" />
@@ -113,18 +986,7 @@
                     <option name="comment" value="手机号码" />
                     <option name="custom" value="false" />
                     <option name="ext">
-                      <map>
-                        <entry key="jdbcType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                        <entry key="sqlType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                      </map>
+                      <map />
                     </option>
                     <option name="name" value="phone" />
                     <option name="type" value="java.lang.String" />
@@ -133,18 +995,7 @@
                     <option name="comment" value="邮箱" />
                     <option name="custom" value="false" />
                     <option name="ext">
-                      <map>
-                        <entry key="jdbcType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                        <entry key="sqlType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                      </map>
+                      <map />
                     </option>
                     <option name="name" value="email" />
                     <option name="type" value="java.lang.String" />
@@ -153,18 +1004,7 @@
                     <option name="comment" value="头像" />
                     <option name="custom" value="false" />
                     <option name="ext">
-                      <map>
-                        <entry key="jdbcType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                        <entry key="sqlType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                      </map>
+                      <map />
                     </option>
                     <option name="name" value="header" />
                     <option name="type" value="java.lang.Long" />
@@ -173,18 +1013,7 @@
                     <option name="comment" value="性别" />
                     <option name="custom" value="false" />
                     <option name="ext">
-                      <map>
-                        <entry key="jdbcType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                        <entry key="sqlType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                      </map>
+                      <map />
                     </option>
                     <option name="name" value="gender" />
                     <option name="type" value="java.lang.Integer" />
@@ -193,18 +1022,7 @@
                     <option name="comment" value="生日" />
                     <option name="custom" value="false" />
                     <option name="ext">
-                      <map>
-                        <entry key="jdbcType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                        <entry key="sqlType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                      </map>
+                      <map />
                     </option>
                     <option name="name" value="birth" />
                     <option name="type" value="java.util.Date" />
@@ -213,18 +1031,7 @@
                     <option name="comment" value="所在城市" />
                     <option name="custom" value="false" />
                     <option name="ext">
-                      <map>
-                        <entry key="jdbcType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                        <entry key="sqlType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                      </map>
+                      <map />
                     </option>
                     <option name="name" value="cityId" />
                     <option name="type" value="java.lang.Long" />
@@ -233,18 +1040,7 @@
                     <option name="comment" value="职业" />
                     <option name="custom" value="false" />
                     <option name="ext">
-                      <map>
-                        <entry key="jdbcType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                        <entry key="sqlType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                      </map>
+                      <map />
                     </option>
                     <option name="name" value="job" />
                     <option name="type" value="java.lang.String" />
@@ -253,18 +1049,7 @@
                     <option name="comment" value="个性签名" />
                     <option name="custom" value="false" />
                     <option name="ext">
-                      <map>
-                        <entry key="jdbcType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                        <entry key="sqlType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                      </map>
+                      <map />
                     </option>
                     <option name="name" value="signature" />
                     <option name="type" value="java.lang.String" />
@@ -273,18 +1058,7 @@
                     <option name="comment" value="积分" />
                     <option name="custom" value="false" />
                     <option name="ext">
-                      <map>
-                        <entry key="jdbcType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                        <entry key="sqlType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                      </map>
+                      <map />
                     </option>
                     <option name="name" value="integration" />
                     <option name="type" value="java.lang.Integer" />
@@ -293,18 +1067,7 @@
                     <option name="comment" value="经验值" />
                     <option name="custom" value="false" />
                     <option name="ext">
-                      <map>
-                        <entry key="jdbcType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                        <entry key="sqlType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                      </map>
+                      <map />
                     </option>
                     <option name="name" value="growth" />
                     <option name="type" value="java.lang.Integer" />
@@ -313,18 +1076,7 @@
                     <option name="comment" value="启用状态" />
                     <option name="custom" value="false" />
                     <option name="ext">
-                      <map>
-                        <entry key="jdbcType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                        <entry key="sqlType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                      </map>
+                      <map />
                     </option>
                     <option name="name" value="status" />
                     <option name="type" value="java.lang.Integer" />
@@ -333,18 +1085,7 @@
                     <option name="comment" value="注册时间" />
                     <option name="custom" value="false" />
                     <option name="ext">
-                      <map>
-                        <entry key="jdbcType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                        <entry key="sqlType">
-                          <value>
-                            <Object />
-                          </value>
-                        </entry>
-                      </map>
+                      <map />
                     </option>
                     <option name="name" value="createTime" />
                     <option name="type" value="java.util.Date" />
@@ -356,7 +1097,7 @@
               <option name="saveModelName" value="neteam-member" />
               <option name="savePackageName" value="org.irvine.neteam" />
               <option name="savePath" value="$PROJECT_DIR$/neteam-member/src/main/java/org/irvine/neteam" />
-              <option name="templateGroupName" value="Default" />
+              <option name="templateGroupName" value="MybatisPlus" />
             </TableInfoDTO>
           </value>
         </entry>

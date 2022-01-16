@@ -11,6 +11,3 @@ spring:
     username: root
     password: Bzy87263416
 
-mybatis:
-  mapperLocations: classpath:mapper/*.xml
-  type-aliases-package: org.irvine.neteam.common.utils.ResultType

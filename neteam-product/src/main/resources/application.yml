@@ -1,5 +1,5 @@
 server:
-  port: 1234
+  port: 4321
 
 spring:
   application:
@@ -11,3 +11,6 @@ spring:
     username: root
     password: Bzy87263416
 
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: org.irvine.neteam.common.utils.ResultType

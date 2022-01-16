@@ -1,7 +1,7 @@
 package org.irvine.neteam.controller;
 
-import org.irvine.neteam.entity.UserMember;
-import org.irvine.neteam.service.UserMemberService;
+import org.irvine.neteam.entity.ProductTag;
+import org.irvine.neteam.service.ProductTagService;
 import org.springframework.web.bind.annotation.*;
 import org.irvine.neteam.common.utils.ResultType;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -9,19 +9,19 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import javax.annotation.Resource;
 
 /**
- * 会员(UserMember)表控制层
+ * 商品属性(ProductTag)表控制层
  *
  * @author g_ban
- * @since 2022-01-16 04:13:11
+ * @since 2022-01-16 15:23:34
  */
 @RestController
-@RequestMapping("/user/userMember")
-public class UserMemberController {
+@RequestMapping("/product/productTag")
+public class ProductTagController {
     /**
      * 服务对象
      */
     @Resource
-    private UserMemberService userMemberService;
+    private ProductTagService productTagService;
 
     /**
      * 通过主键查询单条数据
@@ -31,40 +31,40 @@ public class UserMemberController {
      */
     @GetMapping("{id}")
     public ResultType queryById(@PathVariable("id") Long id) {
-        return ResultType.ok(this.userMemberService.getById(id));
+        return ResultType.ok(this.productTagService.getById(id));
     }
 
     /**
      * 查询多条数据
      *
-     * @param userMember 实体
+     * @param productTag 实体
      * @return 单条数据
      */
     @GetMapping("/query")
-    public ResultType queryById(UserMember userMember) {
-        return ResultType.ok(this.userMemberService.list(new QueryWrapper<>(userMember)));
+    public ResultType queryById(ProductTag productTag) {
+        return ResultType.ok(this.productTagService.list(new QueryWrapper<>(productTag)));
     }
     
     /**
      * 新增数据
      *
-     * @param userMember 实体
+     * @param productTag 实体
      * @return 新增结果
      */
     @PostMapping
-    public ResultType add(UserMember userMember) {
-        return ResultType.ok(this.userMemberService.save(userMember));
+    public ResultType add(ProductTag productTag) {
+        return ResultType.ok(this.productTagService.save(productTag));
     }
 
     /**
      * 编辑数据
      *
-     * @param userMember 实体
+     * @param productTag 实体
      * @return 编辑结果
      */
     @PutMapping
-    public ResultType update(UserMember userMember) {
-        return ResultType.ok(this.userMemberService.updateById(userMember));
+    public ResultType update(ProductTag productTag) {
+        return ResultType.ok(this.productTagService.updateById(productTag));
     }
 
     /**
@@ -75,7 +75,7 @@ public class UserMemberController {
      */
     @DeleteMapping
     public ResultType deleteById(Long id) {
-        return ResultType.ok(this.userMemberService.removeById(id));
+        return ResultType.ok(this.productTagService.removeById(id));
     }
 
 }

@@ -8,10 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="neteam-member" />
         <module name="neteam-common" />
+        <module name="neteam-product" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="neteam-common-api" target="8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="neteam-common" options="" />
+      <module name="neteam-member" options="" />
+      <module name="neteam-product" options="" />
+    </option>
   </component>
 </project>
